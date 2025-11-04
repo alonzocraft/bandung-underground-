@@ -1,0 +1,35 @@
+/* Neon live theme for Bandung Underground */
+:root{
+  --bg:#07070a;
+  --panel:#0f1720;
+  --accent:#0b63ff;
+  --accent2:#ff004d;
+  --muted:#9aa6b2;
+  --glass: rgba(255,255,255,0.03);
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--bg);color:#e6eef8;line-height:1.6}
+.header{padding:28px 20px;text-align:center;background:linear-gradient(90deg,#030417 0%, #071026 50%);border-bottom:1px solid rgba(255,255,255,0.03)}
+.brand{font-size:36px;font-weight:800;letter-spacing:1px;color:var(--accent2);text-shadow:0 0 8px rgba(255,0,77,0.25),0 0 20px rgba(11,99,255,0.08)}
+.slogan{color:var(--muted);margin-top:6px;font-size:14px}
+.nav{display:flex;justify-content:center;gap:20px;padding:12px 10px;background:transparent}
+.nav a{color:var(--muted);text-decoration:none;padding:8px 14px;border-radius:8px;font-weight:600;transition:all .25s}
+.nav a:hover{color:#fff;box-shadow:0 0 18px rgba(11,99,255,0.12),0 0 28px rgba(255,0,77,0.06);transform:translateY(-2px)}
+.container{max-width:1100px;margin:30px auto;padding:0 16px;display:grid;grid-template-columns:2fr 1fr;gap:20px}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03);padding:18px;border-radius:12px}
+.main-title{color:var(--accent2);font-size:24px;margin:0 0 6px;text-shadow:0 0 12px rgba(255,0,77,0.12)}
+.meta{color:var(--muted);font-size:13px;margin-bottom:12px}
+.hero-img{width:100%;border-radius:10px;height:320px;object-fit:cover;border:1px solid rgba(255,255,255,0.04)}
+.article p{color:#d7e9ff}
+.side h4{color:var(--accent);margin:0 0 10px}
+.list-news{display:flex;flex-direction:column;gap:12px}
+.item{display:flex;gap:12px;align-items:center}
+.thumb{width:78px;height:56px;object-fit:cover;border-radius:8px;border:1px solid rgba(255,255,255,0.03)}
+.item .t{color:#dcefff;font-weight:700;font-size:14px}
+.footer{margin-top:40px;padding:18px;text-align:center;color:var(--muted);border-top:1px solid rgba(255,255,255,0.02)}
+.disclaimer{font-size:12px;color:#98a6b6;margin-top:12px}
+@media(max-width:880px){
+  .container{grid-template-columns:1fr;padding-bottom:40px}
+  .hero-img{height:220px}
+  .brand{font-size:28px}
+}
